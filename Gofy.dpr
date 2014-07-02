@@ -18,7 +18,8 @@ uses
   uMonsterForm in 'uMonsterForm.pas' {frmMonster},
   uMythos in 'uMythos.pas',
   uStreet in 'uStreet.pas',
-  uDrop in 'uDrop.pas' {frmDrop};
+  uDrop in 'uDrop.pas' {frmDrop},
+  Unit1 in 'C:\Program Files (x86)\Borland\Delphi7\Lib\Andora2D\Unit1.pas' {Form1};
 
 {$R *.res}
 
@@ -34,5 +35,6 @@ begin
   Application.CreateForm(TfrmUse, frmUse);
   Application.CreateForm(TfrmMonster, frmMonster);
   Application.CreateForm(TfrmDrop, frmDrop);
+  Application.CreateForm(TForm1, Form1);
   Application.Run;
 end.
